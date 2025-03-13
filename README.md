@@ -13,6 +13,17 @@ The Olympic dataset provides overview on athlete participation in different olym
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 #  <h1 align="center"> QUESTIONS AND SOLUTION </h1>
  --------------------------------
 
@@ -23,7 +34,7 @@ The Olympic dataset provides overview on athlete participation in different olym
 FROM Olympics..events
 
 ```
-![Image](https://github.com/user-attachments/assets/730e29ef-8f96-47da-8d8f-54a2a399e83c)
+
 
 
 ###  2.	List down all Olympics games held so far.
@@ -33,7 +44,7 @@ SELECT DISTINCT (Games) AS Games
 FROM Olympics..events
 ORDER BY Games ASC
 ```
-![Image](https://github.com/user-attachments/assets/ab713561-4aac-47d7-a03d-9a25bf3000ce)
+
 
 ###  3.	Mention the total no of nations who participated in each olympics game?
 
@@ -45,10 +56,15 @@ ON e.NOC = r.NOC
 GROUP BY r.region
 ORDER BY CountOfGames DESC
 ```
-![Image](https://github.com/user-attachments/assets/52db3601-18c6-40dc-934f-f1603aec8dc7)
+![Image](https://github.com/user-attachments/assets/ba1498f6-d912-4007-8280-c771bc4c0c07)
+
+
 
 
 ###  4.	Which year saw the highest and lowest no of countries participating in olympics? 
+![Image](https://github.com/user-attachments/assets/c4d52819-a16c-447f-a888-6836b9f2802c)
+
+
 --LOWEST
 
 ```sql
@@ -66,10 +82,12 @@ FROM Olympics..events
 GROUP BY Year
 ORDER BY CountOfCountries DESC
 ```
-![Image](https://github.com/user-attachments/assets/835420da-faba-4e60-991f-7864e940e5d4)
+
 
 
 ### 5.	Which nation has participated in all of the olympic games?
+![Image](https://github.com/user-attachments/assets/b05e5b6d-2a2d-42ce-98d2-c11955de947a)
+
 
 ```sql
 SELECT Team, Count (Distinct Games) AS Total_Games_Count
@@ -79,20 +97,26 @@ HAVING Count (Distinct Games) IN
 (SELECT Count (Distinct Games) AS Games_Count
 FROM Olympics..events)
 ```
-![Image](https://github.com/user-attachments/assets/2e48695c-72f3-445d-83c9-ee217772e41f)
+
 
 
 ### 6.	Identify the sport which was played in all summer olympics.
+
+![Image](https://github.com/user-attachments/assets/a647abf8-a4fc-4bf2-b5ef-1a1ea14c633b)
+
 
 ```sql
 SELECT DISTINCT (Sport)
 FROM Olympics..events
 WHERE Season = 'Summer'
 ```
-![Image](https://github.com/user-attachments/assets/9392c2d0-18da-4211-b249-d4e7ae7181b0)
+
 
 
 ### 7.	Which Sports were just played only once in the olympics?
+![Image](https://github.com/user-attachments/assets/22dad7db-477c-418a-a9e6-2c87e8289468)
+
+
 
 ```sql
 SELECT  Sport, COUNT (Sport) AS CountOfSport
@@ -100,10 +124,13 @@ FROM Olympics..events
 GROUP BY Sport
 HAVING COUNT (Sport) = 1
 ```
-![Image](https://github.com/user-attachments/assets/6cbd3199-17e8-4f4c-9e60-746138dcf7e2)
+
 
 
 ### 8.	Fetch the total no of sports played in each olympic games.
+
+![Image](https://github.com/user-attachments/assets/d0288234-9a16-4990-9cc6-1e7dec57e26a)
+
 
 ```sql
 SELECT Games ,COUNT (DISTINCT Sport) AS Sport_Count
@@ -111,10 +138,14 @@ FROM Olympics..events
 GROUP BY Games
 ORDER BY  Games ASC
 ```
-![Image](https://github.com/user-attachments/assets/9cc4b502-188b-468d-9d0f-4d130a81b568)
+
 
 
 ### 9.	Fetch details of the oldest athletes to win a gold medal. 
+
+![Image](https://github.com/user-attachments/assets/166745a5-26a9-4962-a836-957afded5d08)
+
+
 
 ```sql
 SELECT *
@@ -126,7 +157,7 @@ FROM Olympics..events
 WHERE Medal = 'Gold'
 )
 ```
-![Image](https://github.com/user-attachments/assets/05b5d328-661c-4ebb-b90b-d3206c52f38e)
+
 
 ### 10.	Find the Ratio of male and female athletes participated in all Olympic games. 
 
@@ -147,6 +178,9 @@ GROUP BY Sex
 
 
 ### 11.	Fetch the top 5 athletes who have won the most gold medals.
+![Image](https://github.com/user-attachments/assets/b5489f30-ea41-445b-b1d3-03dd51d88fc3)
+
+
 
 ```sql
 SELECT TOP 5 Name, COUNT(Medal) AS Count_Of_Gold_Medals
@@ -155,19 +189,25 @@ WHERE Medal = 'Gold'
 GROUP BY Name
 ORDER BY Count_Of_Gold_Medals DESC
 ```
-![Image](https://github.com/user-attachments/assets/4849a4bd-cf43-4fe3-bdfb-bcbf26ee84ae)
+
 
 ### 12.	Fetch the top 5 athletes who have won the most medals (gold/silver/bronze).
+![Image](https://github.com/user-attachments/assets/cb4e8393-d6da-4d27-9735-30b5e86cd8c1)
+
+
+
 ```sql
 SELECT TOP 5 Name, COUNT(Medal) AS Count_Of_Medals
 FROM Olympics..events
 GROUP BY Name
 ORDER BY Count_Of_Medals DESC
 ```
-![Image](https://github.com/user-attachments/assets/9f98ad1d-8040-4672-9176-209bedeca11c)
+
 
 
 ### 13.	Fetch the top 5 most successful countries in Olympics. Success is defined by no of medals won.
+![Image](https://github.com/user-attachments/assets/96c45bad-a934-40e9-a1da-8b71053d9a04)
+
 
 ```sql
 SELECT TOP 5 r.region, Count (e.Medal) AS Count_Of_Medals
@@ -177,9 +217,11 @@ ON e.NOC = r.NOC
 GROUP BY r.region
 ORDER BY Count_Of_Medals DESC
 ```
-![Image](https://github.com/user-attachments/assets/6a73024b-7d52-4062-9ff3-2d8c7278961c)
+
 
 ### 14.	List down total gold, silver and bronze medals won by each country.
+![Image](https://github.com/user-attachments/assets/26d92b51-868f-42c0-8d05-8fb647239746)
+
 
 ```sql
 SELECT r.region, e.Medal
@@ -188,10 +230,13 @@ JOIN Olympics..regions r
 ON e.NOC = r.NOC
 WHERE e.Medal IS NOT NULL
 ```
-![Image](https://github.com/user-attachments/assets/e7cb1086-17ac-4129-ad38-5a80e3a49485)
+
 
 
 ### 15.	List down total gold, silver and bronze medals won by each country corresponding to each Olympic games.
+![Image](https://github.com/user-attachments/assets/568c5d0f-fed8-40cc-9f8c-78f08da9bc0b)
+
+
 ```sql
 SELECT r.region, LAG(e.Medal) OVER (PARTITION BY e.Games ORDER BY r.region) AS Medals
 FROM Olympics..events e
@@ -199,10 +244,11 @@ JOIN Olympics..regions r
 ON e.NOC = r.NOC
 ORDER BY r.region
 ```
-![Image](https://github.com/user-attachments/assets/74514b22-30e8-4fb5-acb7-a4ec9f56168b)
 
 
 ### 16.	Identify which country won the most gold, most silver and most bronze medals in each olympic games.
+![Image](https://github.com/user-attachments/assets/7a6d2acd-482a-47e3-8664-daf72377d350)
+
 
 --MOST GOLD MEDAL WON BY COUNTRY
 
@@ -237,9 +283,11 @@ WHERE Medal = 'Bronze'
 GROUP BY r.region
 ORDER BY Count_Of_Bronze_Medals DESC
 ```
-![Image](https://github.com/user-attachments/assets/d984f059-4724-4f2a-a6ed-c51d9c44a719)
+
 
 ### 17.	Identify which country won the most gold, most silver, most bronze medals and the most medals in each Olympic games.
+![Image](https://github.com/user-attachments/assets/dd58815c-045e-48d0-961b-4100c5b80d41)
+
 
 --MOST GOLD MEDAL BY COUNTRY 
 ```sql
@@ -257,7 +305,7 @@ SELECT  region, Games, Gold_Medals
 FROM CTE 
 WHERE RANK = 1
 ```
-![Image](https://github.com/user-attachments/assets/bdc3b6d2-91d6-4e5b-84f0-719ffb83fe55)
+
 
 --MOST SILVER MEDAL BY COUNTRY 
 
@@ -276,7 +324,7 @@ SELECT  region, Games,Silver_Medals
 FROM CTE 
 WHERE RANK = 1
 ```
-![Image](https://github.com/user-attachments/assets/0436b8be-7901-4f47-be8c-02703afcf22b)
+
 
 --MOST BRONZE MEDAL BY COUNTRY 
 
@@ -295,9 +343,11 @@ SELECT  Games, region,Bronze_Medals
 FROM CTE 
 WHERE RANK = 1
 ```
-![Image](https://github.com/user-attachments/assets/83bc52a0-6bdd-41c2-85b9-672e8f906e0e)
+
 
 ### 18.	Which countries have never won gold medal but have won silver/bronze medals?
+![Image](https://github.com/user-attachments/assets/9aec093b-b913-4724-a64a-2d5f2480d8df)
+
 
 --COUNTRIES WITHOUT GOLD MEDAL--- (Apparently, there is no country without a Gold Medal)
 ```sql
@@ -318,11 +368,15 @@ FROM Medals
 GROUP BY Team
 ORDER BY COUNT (GoldCount) ASC
 ```
-![Image](https://github.com/user-attachments/assets/c645de9c-8803-4c9b-996e-0a7ed202f1af)
+
 
 
 
 ### 19.	In which Sport/event, India has won highest medals.
+![Image](https://github.com/user-attachments/assets/ed27651d-943c-4b9f-aa56-eaa895faae6a)
+
+
+
 ```sql
 SELECT TOP 1 e.Sport, COUNT(Medal) AS Count_Of_Medal
 FROM Olympics..events e
@@ -332,10 +386,10 @@ WHERE r.region = 'India'
 GROUP BY e.Sport 
 ORDER BY Count_Of_Medal DESC
 ```
-![Image](https://github.com/user-attachments/assets/b43ba552-2e17-409d-a7af-a2b224159291)
+
 
 ### 20.	Break down all Olympic games where india won medal for Hockey and how many medals in each Olympic games.
-
+![Image](https://github.com/user-attachments/assets/096a1c7c-14c6-4771-a4cf-f6fdd9a1abd6)
 ```sql
 SELECT DISTINCT (e.Games), e.Medal, COUNT(e.Medal) Count_Of_Medal
 FROM Olympics..events e
@@ -345,4 +399,4 @@ WHERE r.region = 'India' AND Sport = 'Hockey' AND e.Medal IS NOT NULL
 GROUP BY e.Games, e.Medal
 ORDER BY e.Games ASC
 ```
-![Image](https://github.com/user-attachments/assets/d91bc8c9-a962-4b31-bc0e-dc96d8ab9f0f)
+
