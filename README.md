@@ -247,20 +247,20 @@ FROM CTE
 WHERE RANK = 1
 ```
 
---MOST SILVER MEDAL BY COUNTRY 
+--MOST BRONZE MEDAL BY COUNTRY 
 
 ```sql
 WITH CTE AS
 (
-SELECT   r.region, e.Games, COUNT (e.Medal) AS Silver_Medals,
+SELECT   r.region, e.Games, COUNT (e.Medal) AS Bronze_Medals,
 RANK() OVER (PARTITION BY e.Games ORDER BY COUNT (e.Medal) DESC) AS RANK
 FROM Olympics..events e
 JOIN Olympics..regions r
 ON e.NOC = r.NOC 
-WHERE Medal = 'Silver'
+WHERE Medal = 'Bronze'
 GROUP BY r.region, e.Games
 )
-SELECT  region, Games,Silver_Medals
+SELECT  Games, region,Bronze_Medals
 FROM CTE 
 WHERE RANK = 1
 ```
