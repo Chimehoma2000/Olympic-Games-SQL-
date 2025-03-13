@@ -9,6 +9,16 @@ The Olympic dataset provides overview on athlete participation in different olym
 
 ![Image](https://github.com/user-attachments/assets/f876c81d-52ce-4fc1-93f3-88805eb35388)
 
+## ANALYSIS
+
+I started the process by learning the SQL basics, including SELECT, LIMIT, WHERE, AS, GROUP BY, ORDER BY, AND, JOIN, CASE, LAG, RANK and aggregations.
+From there, I dug into the data structure and ran queries to find meaningful trends which included.  
+
+1. Participation Insights  
+2. Olympic Games Analysis  
+3. Country and Region Analysis
+4. 4. Athlete & Medal Insights
+
 
 
 
