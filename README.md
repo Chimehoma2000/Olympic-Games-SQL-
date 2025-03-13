@@ -17,7 +17,7 @@ From there, I dug into the data structure and ran queries to find meaningful tre
 1. Participation Insights  
 2. Olympic Games Analysis  
 3. Country and Region Analysis
-4. 4. Athlete & Medal Insights
+4. Athlete & Medal Insights
 
 
 
@@ -401,5 +401,28 @@ ORDER BY e.Games ASC
 ```
 
 ## KEY INSIGHTS
-The Olympic dataset provides overview on athlete participation in different olympic games 
+The Olympic dataset provides overview on athlete participation in different olympic games   
 
+## Participation Insights
+Participants by Gender:
+Total 
+
+Countries Participation Over Time: Queries analyze how many distinct Olympic Games each country has participated in.
+
+
+## Athlete & Medal Insights
+
+Top 5 succesful coutries in the olympics:
+
+ USA Winning  8436 Medals
+Russia Winning 5510 Medals
+Germany Winning 5477 Medals
+UK Winning 3120 Medals
+France Winning 2750 Medals
+
+
+
+
+Athletes Who Won the Most Medals: Queries likely count the number of medals won by individual athletes.
+
+Most Popular Sports Across Games: A query identifies the most frequently played sports.
