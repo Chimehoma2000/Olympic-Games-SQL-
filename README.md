@@ -13,8 +13,8 @@ The Olympic dataset provides overview on athlete participation in different olym
 ## DATA SOURCE  
 The  dataset was ent as a study/experience material by a colleague on LinkedIn.  
 It has two tables  
-events - which has 397, 536 rows worth of data  
-regions -  has 230 rows worth of data  
+* events - which has 397, 536 rows worth of data  
+* regions -  has 230 rows worth of data  
 
 ## ANALYSIS
 
@@ -414,12 +414,13 @@ The Olympic dataset provides overview on athlete participation in different olym
 Participants by Gender:
 Total 
 
-Countries Participation Over Time: Queries analyze how many distinct Olympic Games each country has participated in.
+* 2016 saw the highest number of countries participating in olympics (207), while 1896 saw the lowest (12). 
 
+* Aeronautics was the least played sports in the olympics as it was played only once
 
 ## Athlete & Medal Insights
 
-Top 5 succesful coutries in the olympics:
+* Top 5 succesful coutries in the olympics:
 
  USA Winning  8436 Medals
 Russia Winning 5510 Medals
@@ -428,7 +429,7 @@ UK Winning 3120 Medals
 France Winning 2750 Medals
 
 
-Top 5 succesful athletes in the olympics:
+* Top 5 succesful athletes in the olympics:
 
 Nikolay Yefimovich Andrianov Winning 30 Medals
 Michael Fred Phelps, II Winning 28 Medals
@@ -436,9 +437,7 @@ Ole Einar Bjrndalen Winning 26 Medals
 Birgit Fischer-Schmidt Winning 24 Medals
 Natalie Anne Coughlin (-Hall) Winning 24 Medals
 
-USA Won the Most Gold, Silver & Bronze medals in the olympics
+* USA Won the Most Gold, Silver & Bronze medals in the olympics
 
 
-Athletes Who Won the Most Medals: Queries likely count the number of medals won by individual athletes.
 
-Most Popular Sports Across Games: A query identifies the most frequently played sports.
