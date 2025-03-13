@@ -28,6 +28,8 @@ The Olympic dataset provides overview on athlete participation in different olym
  --------------------------------
 
 ###  1. How many olympics games have been held?
+![Image](https://github.com/user-attachments/assets/959c00ad-58df-4057-bfd1-1ce6bb5bf8b6)
+
 
 ```sql
  SELECT COUNT (DISTINCT Games) AS CountOfGames
@@ -38,7 +40,7 @@ FROM Olympics..events
 
 
 ###  2.	List down all Olympics games held so far.
-
+![Image](https://github.com/user-attachments/assets/c1302de2-e8ba-419f-b0dc-84d83e672584)
 ```sql
 SELECT DISTINCT (Games) AS Games
 FROM Olympics..events
@@ -47,7 +49,7 @@ ORDER BY Games ASC
 
 
 ###  3.	Mention the total no of nations who participated in each olympics game?
-
+![Image](https://github.com/user-attachments/assets/ba1498f6-d912-4007-8280-c771bc4c0c07)
 ```sql
 SELECT r.region, COUNT(DISTINCT e.Games) AS CountOfGames
 FROM Olympics..events e
@@ -56,7 +58,7 @@ ON e.NOC = r.NOC
 GROUP BY r.region
 ORDER BY CountOfGames DESC
 ```
-![Image](https://github.com/user-attachments/assets/ba1498f6-d912-4007-8280-c771bc4c0c07)
+
 
 
 
