@@ -1,4 +1,11 @@
-# Olympic-Games-SQL-
+
+# <h1 align="center">:Olympic-Games-SQL</h1>
+------------------------
+
+
+## OVERVIEW
+The Olympic dataset provides overview on athlete participation in different olympic games 
+
 
 
 
