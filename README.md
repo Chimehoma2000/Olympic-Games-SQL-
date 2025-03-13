@@ -14,8 +14,10 @@ The Olympic dataset provides overview on athlete participation in different olym
 The  dataset was ent as a study/experience material by a colleague on LinkedIn.  
 It has two tables  
 * events - which has 397, 536 rows worth of data  
-* regions -  has 230 rows worth of data  
+* regions -  has 230 rows worth of data
 
+  Download Dataset [Download ](https://drive.google.com/file/d/1b4ZWWsHXZIs8fjqbXRT2vOFXzSxW0Vm6/view?usp=drive_link)
+  
 ## ANALYSIS
 
 I started the process by learning the SQL basics, including SELECT, LIMIT, WHERE, AS, GROUP BY, ORDER BY, AND, JOIN, CASE, LAG, RANK and aggregations.
