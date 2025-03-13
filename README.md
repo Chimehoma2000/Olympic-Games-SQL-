@@ -10,6 +10,8 @@ The Olympic dataset provides overview on athlete participation in different olym
 ![Image](https://github.com/user-attachments/assets/f876c81d-52ce-4fc1-93f3-88805eb35388)
 
 
+
+
 #  <h1 align="center"> QUESTIONS AND SOLUTION </h1>
  --------------------------------
 
@@ -387,4 +389,7 @@ WHERE r.region = 'India' AND Sport = 'Hockey' AND e.Medal IS NOT NULL
 GROUP BY e.Games, e.Medal
 ORDER BY e.Games ASC
 ```
+
+## KEY INSIGHTS
+The Olympic dataset provides overview on athlete participation in different olympic games 
 
