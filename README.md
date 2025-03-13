@@ -407,12 +407,11 @@ GROUP BY e.Games, e.Medal
 ORDER BY e.Games ASC
 ```
 
-## KEY INSIGHTS
+## KEY INSIGHTS 
 
-## Participation Insights
-Participants by Gender: 
-Males: 100,979, Females: 33,807 
-Total: 134,731
+ 
+* Males: 100,979, Females: 33,807  
+*Total: 134,731  
 
 * 51 olympic games have been held in total.
 
@@ -424,21 +423,21 @@ Total: 134,731
 
 * Top 5 succesful coutries in the olympics:
 
- USA Winning  8436 Medals
-Russia Winning 5510 Medals
-Germany Winning 5477 Medals
-UK Winning 3120 Medals
-France Winning 2750 Medals
+ USA Winning  8436 Medals  
+Russia Winning 5510 Medals  
+Germany Winning 5477 Medals  
+UK Winning 3120 Medals  
+France Winning 2750 Medals  
 
 * Top 5 succesful athletes in the olympics:
 
-Nikolay Yefimovich Andrianov Winning 30 Medals
-Michael Fred Phelps, II Winning 28 Medals
-Ole Einar Bjrndalen Winning 26 Medals
-Birgit Fischer-Schmidt Winning 24 Medals
-Natalie Anne Coughlin (-Hall) Winning 24 Medals  
+Nikolay Yefimovich Andrianov Winning 30 Medals  
+Michael Fred Phelps, II Winning 28 Medals  
+Ole Einar Bjrndalen Winning 26 Medals  
+Birgit Fischer-Schmidt Winning 24 Medals  
+Natalie Anne Coughlin (-Hall) Winning 24 Medals    
 
-* USA Won the Most Gold, Silver & Bronze medals in the olympics.
+* USA Won the Most Gold, Silver & Bronze medals in the olympics.  
 
 
 
