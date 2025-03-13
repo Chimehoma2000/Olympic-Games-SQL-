@@ -1,5 +1,5 @@
 
-# <h1 align="center">:Olympic-Games-SQL</h1>
+# <h1 align="center">Olympic-Games-SQL</h1>
 ------------------------
 
 
