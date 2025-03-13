@@ -7,21 +7,7 @@
 The Olympic dataset provides overview on athlete participation in different olympic games 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Image](https://github.com/user-attachments/assets/f876c81d-52ce-4fc1-93f3-88805eb35388)
 
 
 #  <h1 align="center"> QUESTIONS AND SOLUTION </h1>
