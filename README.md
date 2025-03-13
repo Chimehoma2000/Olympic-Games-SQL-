@@ -1,5 +1,30 @@
 # Olympic-Games-SQL-
 
+
+![Image](https://github.com/user-attachments/assets/ab713561-4aac-47d7-a03d-9a25bf3000ce)
+![Image](https://github.com/user-attachments/assets/52db3601-18c6-40dc-934f-f1603aec8dc7)
+![Image](https://github.com/user-attachments/assets/835420da-faba-4e60-991f-7864e940e5d4)
+![Image](https://github.com/user-attachments/assets/2e48695c-72f3-445d-83c9-ee217772e41f)
+![Image](https://github.com/user-attachments/assets/9392c2d0-18da-4211-b249-d4e7ae7181b0)
+![Image](https://github.com/user-attachments/assets/6cbd3199-17e8-4f4c-9e60-746138dcf7e2)
+![Image](https://github.com/user-attachments/assets/9cc4b502-188b-468d-9d0f-4d130a81b568)
+![Image](https://github.com/user-attachments/assets/05b5d328-661c-4ebb-b90b-d3206c52f38e)
+![Image](https://github.com/user-attachments/assets/4849a4bd-cf43-4fe3-bdfb-bcbf26ee84ae)
+![Image](https://github.com/user-attachments/assets/9f98ad1d-8040-4672-9176-209bedeca11c)
+![Image](https://github.com/user-attachments/assets/6a73024b-7d52-4062-9ff3-2d8c7278961c)
+![Image](https://github.com/user-attachments/assets/e7cb1086-17ac-4129-ad38-5a80e3a49485)
+![Image](https://github.com/user-attachments/assets/74514b22-30e8-4fb5-acb7-a4ec9f56168b)
+![Image](https://github.com/user-attachments/assets/d984f059-4724-4f2a-a6ed-c51d9c44a719)
+![Image](https://github.com/user-attachments/assets/bdc3b6d2-91d6-4e5b-84f0-719ffb83fe55)
+![Image](https://github.com/user-attachments/assets/0436b8be-7901-4f47-be8c-02703afcf22b)
+![Image](https://github.com/user-attachments/assets/83bc52a0-6bdd-41c2-85b9-672e8f906e0e)
+![Image](https://github.com/user-attachments/assets/c645de9c-8803-4c9b-996e-0a7ed202f1af)
+![Image](https://github.com/user-attachments/assets/b43ba552-2e17-409d-a7af-a2b224159291)
+![Image](https://github.com/user-attachments/assets/d91bc8c9-a962-4b31-bc0e-dc96d8ab9f0f)
+
+
+
+
 #  <h1 align="center"> QUESTIONS AND SOLUTION </h1>
  --------------------------------
 
@@ -10,7 +35,7 @@
 FROM Olympics..events
 
 ```
-
+![Image](https://github.com/user-attachments/assets/730e29ef-8f96-47da-8d8f-54a2a399e83c)
 
 
 ###  2.	List down all Olympics games held so far.
