@@ -169,19 +169,13 @@ WHERE Medal = 'Gold'
 
 
 ### 10.	Find the Ratio of male and female athletes participated in all Olympic games. 
-
+![Image](https://github.com/user-attachments/assets/411ae917-7e09-4cbd-a958-f253530834bf)
 ```sql
-WITH Athlete_Count AS
-(
-SELECT Sex,COUNT(DISTINCT ID) AS Male_Distinct_Count
+SELECT 
+    Sex, 
+    COUNT(DISTINCT Name) AS gender_count,
+    COUNT(DISTINCT Name) * 100 / SUM(COUNT(DISTINCT Name)) OVER() AS proportion_percentage
 FROM Olympics..events
-WHERE Sex = 'M'
---GROUP BY Sex
-)
-SELECT    Male_Distinct_Count/  COUNT(DISTINCT ID) * 100 AS Male_percent
-FROM Athlete_Count 
-JOIN Olympics..events 
---WHERE Sex = 'M'
 GROUP BY Sex
 ```
 
