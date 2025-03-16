@@ -407,33 +407,33 @@ ORDER BY e.Games ASC
 
  
 * Males: 100,979, Females: 33,807  
-*Total: 134,731  
+* Total: 134,731  
 
-* 51 olympic games have been held in total.
+(1) 51 olympic games have been held in total.
 
-* 2016 saw the highest number of countries participating in olympics (207), while 1896 saw the lowest (12). 
+(2) 2016 saw the highest number of countries participating in olympics (207), while 1896 saw the lowest (12). 
 
-* 206 Countries in total participated in the olympics.
+(3) 206 Countries in total participated in the olympics.
 
-* Aeronautics was the least played sports in the olympics as it was played only once.
+(4) Aeronautics was the least played sports in the olympics as it was played only once.
 
-* Top 5 succesful coutries in the olympics:
+(5) Top 5 succesful coutries in the olympics:
 
- USA Winning  8436 Medals  
-Russia Winning 5510 Medals  
-Germany Winning 5477 Medals  
-UK Winning 3120 Medals  
-France Winning 2750 Medals  
+* USA Winning  8436 Medals  
+* Russia Winning 5510 Medals  
+* Germany Winning 5477 Medals  
+* UK Winning 3120 Medals  
+* France Winning 2750 Medals  
 
-* Top 5 succesful athletes in the olympics:
+(6) Top 5 succesful athletes in the olympics:
 
-Nikolay Yefimovich Andrianov Winning 30 Medals  
-Michael Fred Phelps, II Winning 28 Medals  
-Ole Einar Bjrndalen Winning 26 Medals  
-Birgit Fischer-Schmidt Winning 24 Medals  
-Natalie Anne Coughlin (-Hall) Winning 24 Medals    
+* Nikolay Yefimovich Andrianov Winning 30 Medals  
+* Michael Fred Phelps, II Winning 28 Medals  
+* Ole Einar Bjrndalen Winning 26 Medals  
+* Birgit Fischer-Schmidt Winning 24 Medals  
+* Natalie Anne Coughlin (-Hall) Winning 24 Medals    
 
-* USA Won the Most Gold, Silver & Bronze medals in the olympics.  
+(7) USA Won the Most Gold, Silver & Bronze medals in the olympics.  
 
 
 
